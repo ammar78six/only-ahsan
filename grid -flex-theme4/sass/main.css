@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:wght@300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  --color-primary: hsl(87, 98%, 34%);
+  --color-primary-m: hsla(87, 100%, 45%, 0.55);
+  --color-secondary: hsl(274, 99%, 72%);
+  --color-secondary-m: hsla(274, 99%, 72%, 0.6);
+  --color-tertiary: hsla(0, 0%, 0%, 0.466);
+  --color-tertiary-m: rgba(38, 52, 65, 0.65);
+  --color-quaternary: rgb(255, 235, 153);
+  --color-quaternary-m: rgba(192, 162, 43, 0.65);
+  --color-quinary: white;
+  --color-quinary-m: rgba(255, 255, 255, 0.5);
+}
+
+html[data-theme="dark"] {
+  --color-primary: rgb(36, 38, 43);
+  --color-primary-m: rgba(36, 38, 43, 0.65);
+  --color-secondary: rgb(124, 185, 8);
+  --color-secondary-m: rgba(123, 185, 8, 0.5);
+  --color-tertiary: rgb(38, 52, 65);
+  --color-tertiary-m: hsla(183, 34%, 38%, 0.65);
+  --color-quaternary: hsl(220, 10%, 28%);
+  --color-quaternary-m: hsla(220, 10%, 28%, 0.65);
+  --color-quinary: white;
+  --color-quinary-m: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.header {
+  grid-column: 1 / -1;
+  height: 100vh;
+  width: 100%;
+}
+
+.header .jado {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  border-radius: 0  0 190% 190%;
+  -webkit-transform: translateY(-40vh);
+          transform: translateY(-40vh);
+  background-color: aquamarine;
+  padding: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-animation: border 4s infinite ease-in;
+          animation: border 4s infinite ease-in;
+}
+
+.header .jado-child {
+  position: absolute;
+  width: 60rem;
+  height: 1.7rem;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  bottom: 0;
+}
+
+.header .jado__content {
+  width: 1rem;
+  -webkit-transform: translateY(13vh);
+          transform: translateY(13vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .jado__content h3 {
+  color: black;
+  word-break: break-all;
+  font-size: calc(.4rem + .6vw);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  letter-spacing: calc(.2rem);
+}
+
+.header .jado__content:hover {
+  -webkit-animation: letterUp 1.5s ease-in-out both;
+          animation: letterUp 1.5s ease-in-out both;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 12px black;
+          box-shadow: 3px 3px 12px black;
+}
+
+.header .jado__content:nth-child(1):hover {
+  -webkit-animation: letterUp1 1s ease-in-out both;
+          animation: letterUp1 1s ease-in-out both;
+}
+
+.header .jado__content:nth-child(3):hover {
+  -webkit-animation: letterUp2 .8s ease-in-out both;
+          animation: letterUp2 .8s ease-in-out both;
+}
+
+.header .jado__content:hover > h3 {
+  height: 10rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.header .jado__content:nth-child(1) {
+  -webkit-transform: translateY(9.8vh);
+          transform: translateY(9.8vh);
+}
+
+.header .jado__content:nth-child(2) {
+  -webkit-transform: translateY(18.6vh);
+          transform: translateY(18.6vh);
+}
+
+.header .jado__content:nth-child(3) {
+  -webkit-transform: translateY(4.5vh);
+          transform: translateY(4.5vh);
+}
+
+@-webkit-keyframes letterUp {
+  0% {
+    width: 2rem;
+  }
+  30% {
+    width: 3rem;
+  }
+  50% {
+    width: 4rem;
+  }
+  70% {
+    width: 5rem;
+  }
+  100% {
+    width: 8rem;
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
+}
+
+@keyframes letterUp {
+  0% {
+    width: 2rem;
+  }
+  30% {
+    width: 3rem;
+  }
+  50% {
+    width: 4rem;
+  }
+  70% {
+    width: 5rem;
+  }
+  100% {
+    width: 8rem;
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
+}
+
+@-webkit-keyframes letterUp1 {
+  0% {
+    width: 2rem;
+  }
+  30% {
+    width: 3rem;
+  }
+  100% {
+    width: 5rem;
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
+}
+
+@keyframes letterUp1 {
+  0% {
+    width: 2rem;
+  }
+  30% {
+    width: 3rem;
+  }
+  100% {
+    width: 5rem;
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
+}
+
+@-webkit-keyframes letterUp2 {
+  0% {
+    width: 2rem;
+  }
+  100% {
+    width: 4rem;
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
+}
+
+@keyframes letterUp2 {
+  0% {
+    width: 2rem;
+  }
+  100% {
+    width: 4rem;
+    -webkit-transform: translateY(6vh);
+            transform: translateY(6vh);
+  }
+}
+
+@-webkit-keyframes border {
+  0% {
+    border-radius: 0  0 190% 100%;
+  }
+  50% {
+    border-radius: 0  0 100% 190%;
+  }
+  100% {
+    border-radius: 0  0 190% 100%;
+  }
+}
+
+@keyframes border {
+  0% {
+    border-radius: 0  0 190% 100%;
+  }
+  50% {
+    border-radius: 0  0 100% 190%;
+  }
+  100% {
+    border-radius: 0  0 190% 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

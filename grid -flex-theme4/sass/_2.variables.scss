@@ -1,0 +1,124 @@
+// * Light colors
+html {
+    --color-primary: hsl(87, 98%, 34%);
+    --color-primary-m: hsla(87, 100%, 45%, 0.55);
+    --color-secondary: hsl(274, 99%, 72%);
+    --color-secondary-m: hsla(274, 99%, 72%, 0.6);
+    --color-tertiary: hsla(0, 0%, 0%, 0.466);
+    --color-tertiary-m: rgba(38, 52, 65, 0.65);
+    --color-quaternary: rgb(255, 235, 153);
+    --color-quaternary-m: rgba(192, 162, 43, 0.65);
+    --color-quinary: white;
+    --color-quinary-m: rgba(255, 255, 255, 0.5);
+    
+  
+}
+// * Dark colors
+html[data-theme="dark"] {
+    --color-primary: rgb(36, 38, 43);
+    --color-primary-m: rgba(36, 38, 43, 0.65);
+    --color-secondary: rgb(124, 185, 8);
+    --color-secondary-m: rgba(123, 185, 8, 0.5);
+    --color-tertiary: rgb(38, 52, 65);
+    --color-tertiary-m: hsla(183, 34%, 38%, 0.65);
+    --color-quaternary: hsl(220, 10%, 28%);
+    --color-quaternary-m: hsla(220, 10%, 28%, 0.65);
+    --color-quinary: white;
+    --color-quinary-m: rgba(255, 255, 255, 0.5);   
+}
+// html {
+//     --color-gold: gold;
+    
+//     --color-pur-white: rgb(255, 255, 255);
+//     --color-primary:rgba(12, 7, 7, 0.774);
+//     --color-secondary:black;
+//     --color-nav:rgba(0, 0, 0, 0.7);
+//     --color-header-content:rgba(34, 34, 34, 0.7);
+    
+//     --color-skills-content:rgba(34, 34, 34, 0.7);
+//     --color-primary-linear:rgba(180, 180, 180, 0.274);
+//     --color-skin:rgb(252, 224, 173);
+//   --color-white:white;
+//   --color-secondary:black;
+//     --color-secondary-rgba: rgba(49, 49, 49, 0.397);
+  
+// --color-btn:rgba(255, 255, 255, 0.685);
+
+    
+//     --two-color-primary: #6EC1E4;
+//     --two-color-secondary: #54595F;
+//     --two-color-text: #7A7A7A;
+//     --two-color-green-1: rgb(97, 206, 112);
+//     --two-color-blue: #4054B2;
+//     --two-color-green-2: rgb(35, 164, 85);
+//     --two-color-black: #000;
+//     --two-color-white: #FFF;
+//     --two-primary-font-family: "Roboto", sans-serif;
+//     --two-primary-font-weight: 400;
+//     --two-secondary-font-family: "Roboto Slab", sans-serif;
+//     --two-secondary-font-weight: 600;
+//     --two-tertiary-font-family:'Poppins', sans-serif;
+//     --two-tertiary-font-weight: 800;
+//     --two-primary-font-size: 1.2rem;
+//     --two-secondary-font-size: 4rem;
+
+
+// }
+
+$color-primary-dark:#000c40fd;
+$color-primary-mid:#360168b7;
+$black:black;
+$white:rgb(255, 255, 255);
+$dim-white:rgba(218, 218, 218, 0.904);
+$font-size-heading:calc(1.8rem + 2vw);
+$font-size-heading-big:calc(2rem + 2.2vw);
+$font-size-heading-biggest:calc(3rem + 2.9vw);
+
+$font-size-heading-biggest-two:calc(3.7rem + 4vw);
+$font-size-heading-biggest-three:calc(7rem + 8vw);
+$font-size-heading-small:calc(1rem + 2vw);
+$font-size-text:calc(.4rem + .6vw);
+$font-size-text-big:calc(.9rem + 1vw);
+$font-size-text-small: calc(.2rem + .5vw);
+$padding-sec:calc(3rem + 4vw);
+$padding-small:calc(.7rem + 1.3vw);
+$padding-smaller:calc(.35rem + 1vw);
+$padding-smallest:calc(.2rem + .5vw);
+$padding-big:calc(2rem + 2.5vw);
+$padding-biggest:calc(4rem + 6vw);
+$letter-spacing:calc(.1rem + 1vw);
+$letter-spacing-smaller:calc(.2rem);
+$letter-spacing-small:calc(.2rem + .29vw);
+$line-height-small:calc(.5rem + .8vw);
+$line-height-big:calc(1.9rem + 2vw);
+$font-family:'Dongle',
+sans-serif;
+$font-family-2:'Roboto',
+sans-serif;
+$line-height:calc(.5rem + .8vw);
+$facebook: #395599;
+$instagram: #c32f82;
+$twitter: #1c9deb;
+$pinterest: #d73532;
+$linkedIn: #4064ad;
+$youTube: #f80000;
+
+
+// html[data-theme="dark"] {
+//     --color-gold: white;
+//     --color-secondary: black;
+//     --color-body: black;
+//     --color-skin:rgba(0, 0, 0, 0.89);
+//     --color-pur-white: gold;
+    
+//     --color-white:black;
+//     --color-black-mid:white;
+//     --color-primary-linear:rgba(170, 167, 167, 0.384);
+//     --color-skills-content:rgba(224, 224, 224, 0.7);
+//     --color-primary:white;
+//     // --color-secondary:gold;
+//     --color-secondary-rgba: rgba(59, 59, 59, 0.589);
+//     --color-header-content:rgba(75, 75, 75, 0.7);
+//     // --color-white:black;
+// }
+

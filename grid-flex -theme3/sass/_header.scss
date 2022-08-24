@@ -1,0 +1,39 @@
+.header{
+    grid-column: 1 / -1;
+    height: 100vh;
+    background-image:linear-gradient(rgba(65, 65, 65, 0.5), rgba(0, 0, 0, 0.699)), url("../images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    &__content{
+        display: flex;
+        flex-direction: column;
+      
+        justify-content: space-evenly;
+        align-items: center;
+        h1{
+            font-size: $font-size-heading-biggest;
+            letter-spacing: $letter-spacing-small;
+            font-family: $font-family-2;
+            color: white;
+            
+        }
+        i{
+            font-size: $font-size-heading-biggest-three;
+            // font-family:$font-family-2 ;
+                    visibility: hidden;
+                    display: none;
+            color: rgba(255, 255, 0, 0.89);
+            padding: 3rem;
+        }
+    }
+
+
+}
+.active{
+    display: block !important;
+    visibility: visible !important;
+}
