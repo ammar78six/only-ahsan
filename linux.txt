@@ -1,0 +1,93 @@
+ls: list status.
+
+ll : to view details of file
+
+ls -a: to view details of also hidden files
+
+touch ahsan: file name ahsan
+
+pwd: print working directory : path of that directory
+
+cd: change directory: to go into the folder
+
+/AhsanAwan$ vim index.html: Make index.html file in AhsanAwan folder and open
+that file in vim folder.
+
+/AhsanAwan$ cat index.html : to peak into text of file. without mlving into that.
+
+ cp folderName AhsanAwan/: copy folderName to AhsanAwan
+
+cd .. :to go out of one folder
+
+shift to root user: sudo su -
+
+/AhsanAwan$ cd /home/ubuntu/faisal
+
+ls taimoor/test/: u wont move in that folder just peak into that.
+
+mv: move, cut a folder
+
+rm -r*: to remove everything
+
+-rf: remove forcefully
+
+ sudo adduser ahsan:to add user
+
+......................................................................
+
+shortcuts:{
+press tab after writing half word it wil write whole name
+}
+
+......................................................................
+
+apt-get install apache2: it wont work cuz u r not root user
+ sudo apt  install apache2: we have now become root user
+sudo apt  install apache2 -y: already told him "yes" so it doesnt ask for permission
+ 
+.......................................................................
+
+mysql:{
+mysql;
+show databases; :will show  databases
+create database school:a new database of name school will be made 
+use school;  :now we will go in school database that we have made
+create table student (id INT,name VARCHAR(20),email varchar(30));
+
+INSERT into ahsan(id,name,email)  VALUES (1, "ahsan", "ahsanawan@gmail.comcre");
+
+VARCHAR(20) :max characters 20
+
+select * from student;
+}
+
+...................................................................
+
+
+UPDATE laptop SET name="lg1" WHERE id=3; : laptop-"table name", name changed from lg 
+to lg1 where id is 3.
+
+
+DELETE FROM laptop WHERE id = 4;  : will del whole row of id 4
+
+....................................................................
+
+owner               group         audience       drwx: directory folder
+
+r w x                r w x          r w x          r:read       
+                                                                  x:exexution
+4 2 1                4 2 1           4 2 1          w: write
+
+
+700: owner has full permission groupp has 0  permission and audience has 0 permission
+
+144: owner has exucution permission group has read permission adience has read permision
+
+146: owner has exucution permission group has read permission adience has read and write permision
+
+
+....................................................................................
+
+
+scripting: pattern for oerforming actions
+
