@@ -1,0 +1,262 @@
+.skills{
+    grid-column: 1 / -1;
+    // grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    // row-gap: 8rem;
+    // column-gap: 4rem;
+    padding: 6rem 5rem;
+    background-color: var(--color-white);
+    
+
+    &__icon-box{
+        text-align: center;
+        border: 1.6px solid var(--color-skills-content);
+        padding: 4rem;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3){
+            border-top: none;
+
+        }
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6){
+            border-bottom: none;
+            
+        }
+        &:nth-child(4),
+        &:nth-child(1){
+            border-left: none;
+            
+        }
+        &:nth-child(6),
+        &:nth-child(3){
+            border-right: none;
+            
+        }
+        i{
+            font-size: $font-size-heading-big;
+            color: var(--color-gold);
+        }
+        h3{
+            font-size: $font-size-heading-small;
+            font-family: $font-family;
+            color: var(--color-primary);
+        }
+        p{
+            font-size: $font-size-text-big;
+            color: var(--color-primary);
+        }
+        &:hover{
+            transition: .5s;
+            background-color: var(--color-gold);
+            h3,
+            p{
+            color: var(--color-secondary);
+            }
+            i{
+                
+           color: var(--color-pur-white);
+            }
+        }
+    }
+}
+
+
+.about{
+    grid-column: 1 / -1;
+    height: 100vh;
+    background-image: url("../imgs/denis-pavlovic-wl5AypUmamo-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    &__clip-path{
+        grid-column: 3 / 5;
+        grid-row: 1 / -1;
+        background-color: rgba(255, 255, 255, 0.712);
+        clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 27% 45%, 50% 0);
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0 0 10rem;
+        h2{
+            font-size: $font-size-heading-big;
+            font-family: $font-family;
+            font-style: italic;
+            // padding: -10px;
+            // margin-top: 3rem;
+            border-bottom: 4px dashed var(--color-gold);
+        }
+        p{
+            width: 40%;
+            font-size: $font-size-text-big;
+            font-weight:600 ;
+            font-family: $font-family;
+            font-style: italic;
+            margin: 3rem 0;
+
+        }
+        a{
+            text-decoration: none;
+            font-family: $font-family;
+            font-size: $font-size-heading-small;
+            font-style: italic;
+            color: var(--color-secondary);
+            background-color: var(--color-gold);
+            padding: .2rem 2.3rem;
+        }
+
+    }
+
+}
+
+
+.gallery{
+
+    grid-column: 1 / -1;
+    height: 120vh;
+    background-color: violet;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    overflow: hidden;
+
+&__fix-1{
+    grid-row: 1 / -1;
+    grid-column:3 / 6 ;
+    background-image: url("../imgs/ben-dumond-VedK8_UlmkY-unsplash.jpg"); 
+        // width: 100% !important;
+        // height:100% !important;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y:top ;
+    background-position-x: right;
+    background-attachment: fixed;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4,1fr);
+   overflow: hidden;
+
+   .img-1{
+    // grid-column: ;
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; 
+    width: 48rem;
+    height: 100%;
+}
+.img-2{
+    // grid-column: ;
+
+    grid-row: 3 / 5;
+    grid-column: 3 / 4; 
+    width: 40rem;
+    height: 100%;
+}
+
+.img-3{
+    // grid-column: ;
+    grid-row: 3 / 5;
+    grid-column: 1 / 3; 
+    width:100%;
+    height: 100%;
+}
+.img-4{
+    // grid-column: ;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2; 
+    width:100%;
+    height: 100%;
+}
+
+}
+
+&__fix-2{
+    grid-row: 1 / -1;
+    grid-column:1 / 3 ;
+    background-image: url("../imgs/sean-pollock-PhYq704ffdA-unsplash.jpg");
+        // width: 100% !important;
+        // height:100% !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-y:center ;
+    background-position-x: left;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    .img-5{
+        // grid-column: ;
+
+        grid-row: 1 / 2;
+        grid-column: 1 / 2; 
+        width: 32rem;
+        height: 100%;
+    }
+    .img-6{
+        // grid-column: ;
+
+        grid-row: 3 / 5;
+        grid-column: 3 / 4; 
+        width: 32rem;
+        height: 100%;
+    }
+    
+    .img-7{
+        // grid-column: ;
+        grid-row: 3 / 5;
+        grid-column: 1 / 3; 
+        width:100%;
+        height: 100%;
+    }
+    .img-8{
+        // grid-column: ;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2; 
+        width:32rem;
+        height: 100%;
+    }
+    
+}
+
+
+
+
+   
+
+.yes{
+    &:hover{
+        transform: scale(1.1);
+        transition: all .7s ease-in-out;
+        outline: 4px solid yellow;
+        outline-offset: 5px;
+        border-radius: 10px;
+        & img{
+            border-radius: 10px;
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

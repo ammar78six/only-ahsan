@@ -1,0 +1,65 @@
+.nav{
+
+    grid-column: 1 / -1;
+    // grid-row: 1 / 2;
+    position: fixed;
+    z-index: 100;
+    background-color:var(--color-nav);
+    height: 12vh;
+    display: grid;
+    // align-items: center;
+    grid-template-columns: minmax(6rem , 1fr) repeat(11 , minmax(min-content , 16rem)) minmax(6rem , 1fr);
+
+
+    &__logo{
+       
+        grid-column: 2 / 3;
+        padding: 1rem 2.3rem;
+        cursor: pointer;
+        img{
+            width: 4.4rem;
+        }
+        
+    }
+
+    ul{
+        grid-column: 7 / 12;
+      
+        li{
+            float: left;
+            list-style: none;
+            padding: 1.9rem 2rem 0 1rem;
+            font-size: $font-size-heading-small;
+            font-family: $font-family;
+            color: var(--color-white-mid);
+            border-bottom: 3.8px solid transparent;
+            cursor: pointer;
+            &:hover{
+                border-bottom: 4px solid var(--color-gold);
+                transition: all .4s ease-in-out;
+            }
+           
+        }
+    }
+
+    .dark__btn{
+        // color: white;
+        cursor: pointer;
+        // height: 2rem;
+        grid-column: 12 / 14;
+        padding:3rem 0 0 2rem;
+        font-family: $font-family;
+        color: var(--color-gold);
+        font-size: $font-size-text-big;
+        width: 100%;
+        
+    
+        // .input{
+        //     margin-top: 10px;
+        //     margin-left: 10rem;
+        // }
+
+    }
+
+
+}
